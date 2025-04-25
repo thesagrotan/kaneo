@@ -19,7 +19,7 @@ services:
     ports:
       - "5173:5173"
     environment:
-      - KANEO_API_URL=http://0.0.0.0:1337
+      - KANEO_API_URL=${KANEO_API_URL}
     depends_on:
       - api
     restart: unless-stopped
