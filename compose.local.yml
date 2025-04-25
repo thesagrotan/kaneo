@@ -17,7 +17,7 @@ services:
       context: .
       dockerfile: apps/web/Dockerfile
     ports:
-      - "5173:5173"
+      - "80:5173"
     environment:
       - KANEO_API_URL=${KANEO_API_URL}
     depends_on:
